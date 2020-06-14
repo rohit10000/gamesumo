@@ -1,0 +1,16 @@
+{
+  "name": "gamemojo",
+  "version": "1.0.0",
+  "description": "This is a game related project. And we are working to deploy",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "Rohit Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
