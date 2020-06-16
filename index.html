@@ -10,6 +10,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -19,14 +22,14 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand mr-auto" href="#">Gamesumo</a>
+        <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="55" width="70"></a>
         <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Character</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contest</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home"></span>Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info"></span>About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-angellist"></span>Character</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Contest</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card"></span>Contact</a></li>
             </ul>
         </div>
 
@@ -42,7 +45,15 @@
                     unique fusion experience. Our ingenious creations will tickle your
                     innate mind senses!</p>
             </div>
-            <div class="col-12 col-sm">
+            <div class="col-12 col-sm-3 align-self-center">
+                <img src="img/logo.png" class="img-fluid">
+            </div>
+            <div class="col-12 col-sm align-self-center">
+                <a href="#reserve">
+                    <button class="btn btn-sm btn-block btn-primary">
+                        Reserve your Gameplay
+                    </button>
+                </a>
             </div>
         </div>
     </div>
@@ -55,7 +66,19 @@
             <p>We gaming freak gamins are a group of developers, very much inspired by basic video games. We build
                 games learning from simple game codebase. Our aim is to give you better gaming. We folks build by
                 appreciating every games. Below given the description of few of the games that
-                you all must have experienced in your childhood. Happy visiting!! &#128578 </p>
+                you all must have experienced in your childhood. Happy visiting!! </p>
+        </div>
+        <div class="col-12">
+            <div class="card card-body bg-light">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Hocking was slender in the way that writers and musicians are
+                        sometimes slender: not out of any desire or design but rather because his days
+                        were spent being consumed rather than consuming.</p>
+                    <footer class="blockquote-footer">Tom Bissell,
+                        <cite title="Source Title">Extra Lives: Why Video Games Matter</cite>
+                    </footer>
+                </blockquote>
+            </div>
         </div>
     </div>
 
@@ -65,25 +88,84 @@
             <h3>This Month's Focus</h3>
         </div>
         <div class="col col-sm col-md">
-            <h2>Super Mario</h2>
-            <p> There are many different genres, from the typical Mario Games to running races and
-                even solving puzzles. You can companion with other famous game characters, like Luigi,
-                Yoshi, or even Princess Peach in these adventures. We are happy that you have chosen to play
-                all these famous games on Mario Games, the most dynamic site available.</p>
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/mario.jpg"
+                     height="180" width="180" alt="mario">
+
+                <div class="media-body">
+                    <h2 class="mt-0">Super Mario<span class="badge badge-danger">HOT</span>
+                    <span class="badge badge-pill badge-secondary">Play</span></h2>
+                    <p> There are many different genres, from the typical Mario Games to running races and
+                        even solving puzzles. You can companion with other famous game characters, like Luigi,
+                        Yoshi, or even Princess Peach in these adventures. We are happy that you have chosen
+                        to play all these famous games on Mario Games, the most dynamic site available.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
-            <h3>Meet our Culinary Specialists</h3>
+            <h3>Meet our Culinary</h3>
         </div>
         <div class="col col-sm order-sm-first col-md">
-            <h2></h2>
-            <h4>Executive Chef</h4>
-            <p>Award winning three-star Michelin chef with wide International experience having worked closely
-                with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian
-                fusion experiences. </p>
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/hearthstone.jpg"
+                     height="200" width="200" alt="hearthstone">
+
+                <div class="media-body">
+                    <h2 class="mt-0">Hearthstone<span class="badge badge-danger">WoW</span></h2>
+                    <p> Hearthstone is a free-to-play online digital collectible card game developed
+                        and published by Blizzard Entertainment. Originally subtitled Heroes of Warcraft,
+                        Hearthstone builds upon the existing lore of the Warcraft series by using the same
+                        elements, characters, and relics.</p>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="row row-content align-items-center" id="reserve">
+        <div class="col-12 col-sm-8 offset-sm-2">
+            <div class="card">
+                <h3 class="card-header bg-warning text-white"> Reserve your Gameplay</h3>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="guestCount" class="col-12 col-md-4 col-form-label"> Number of Players</label>
+                            <div class="col-12 col-md-8 " id="guestCount">
+                                <input type="radio" id="1" name="count" value="1">
+                                <label for="1" class="col-form-label">1</label>
+                                <input type="radio" id="2" name="count" value="2">
+                                <label for="2" class="col-form-label">2</label>
+                                <input type="radio" id="3" name="count" value="3">
+                                <label for="3" class="col-form-label">3</label>
+                                <input type="radio" id="4" name="count" value="4">
+                                <label for="4" class="col-form-label">4</label>
+                                <input type="radio" id="5" name="count" value="5">
+                                <label for="5" class="col-form-label">5</label>
+                                <input type="radio" id="6" name="count" value="6">
+                                <label for="6" class="col-form-label">6</label>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="dateAndTime" class="col-12 col-md-4 col-form-label">Date and Time</label>
+                            <div class="col-6 col-sm-3">
+                                <input type="date" value="date" placeholder="Date" id="dateAndTime" class="form-control">
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <input type="time" value="time" placeholder="Time" class="form-control">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row form-group">
+                            <button type="submit" class="offset-1 col-3 btn-block btn btn-primary">Submit</button>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -97,7 +179,7 @@
                     <li><a href="./aboutus.html">About</a></li>
                     <li><a href="#">Character</a></li>
                     <li><a href="#">Contest</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./contactus.html">Contact</a></li>
                 </ul>
             </div>
             <div class="col-7 col-sm-5">
@@ -106,18 +188,23 @@
                     51, Manai, Jamalpur<br>
                     Mirzapur 231302<br>
                     INDIA<br>
-                    Mob.: +91 1234567890<br>
-                    Email: <a href="mailto:rohits.games@gmail.com">gamesumo@games.net</a>
+                    <i class="fa fa-mobile-phone"></i> +91 1234567890<br>
+                    <i class="fa fa-envelope"></i> <a href="mailto:rohits.games@gmail.com">gamesumo@games.net</a>
                 </address>
             </div>
             <div class="col-12 col-sm-4 align-self-center">
                 <div class="text-center">
-                    <a href="http://google.com/+">Google+</a>
-                    <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                    <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                    <a href="http://twitter.com/">Twitter</a>
-                    <a href="http://youtube.com/">YouTube</a>
-                    <a href="mailto:">Mail</a>
+                    <a class="btn btn-social-icon btn-google" href="http://google.com/+">
+                        <i class="fa fa-google-plus fa-lg"></i></a>
+
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=">
+                        <i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/">
+                        <i class="fa fa-linkedin fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
+                        <i class="fa fa-twitter fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
                 </div>
             </div>
         </div>
