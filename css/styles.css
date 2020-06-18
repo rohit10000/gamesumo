@@ -21,7 +21,7 @@
     color:floralwhite;
 }
 
-address{
+.comment-text address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
@@ -66,3 +66,43 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+.space{
+    margin: 10px;
+    padding: 10px;
+}
+.comment-content{
+    margin: 10px 30px 10px 30px;
+}
+.hover:hover {
+    opacity: 60%;
+    background-color: orange;
+}
+
+.img_description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: red;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    border-color: chocolate;
+    background-color: #0f0f0f;
+    margin: 180px 40px auto 60px;
+    width: 200px;
+    height: 100px;
+    border-radius: 30%;
+
+}
+
+.hover:hover .img_description_layer{
+    visibility: visible;
+    /*opacity: 60%;*/
+}
+/*.hover:hover .hover{*/
+/*    opacity: 60%;*/
+/*}*/

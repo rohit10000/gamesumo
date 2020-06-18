@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gamesumo: Character</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id="showComments" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-white">
+                <h4 class="modal-title ">Comments</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="doComment" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+            <div class="modal-header btn-info text-white">
+                <h4 class="modal-title ">Do Your Comment</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row form-group comment-content">
+
+                        <textarea class="form-control" id="comment" name="comment" rows="5"></textarea>
+                    </div>
+                    <div class="row form-group ">
+                        <button class="col-3 btn-block d-none"></button>
+                        <button type="button" class="offset-1 col-2 btn-block btn btn-primary" data-dismiss="modal">Submit</button>
+                        <button type="button" class="offset-1 col-2 btn-block btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="55" width="70"></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home"></span>Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info"></span>About</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-angellist"></span>Character</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contest.html"><span class="fa fa-list fa-lg"></span>Contest</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card"></span>Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<header class="jumbotron">
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-12 col-sm-6">
+                <h1>Gamesumo</h1>
+                <p>We take inspiration from the World's best gaming freak gamins, and create a
+                    unique fusion experience. Our ingenious creations will tickle your
+                    innate mind senses!</p>
+            </div>
+            <div class="col-12 col-sm align-self-center">
+                <img src="img/logo.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active">Character</li>
+        </ol>
+        <div class="col-12">
+            <h3>Game Characters</h3>
+            <hr>
+        </div>
+    </div>
+    <div class="row row-content align-items-center">
+        <div class="col-12">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/mario.jpg"
+                     height="250" width="250" alt="mario">
+
+                <div class="media-body">
+                    <div class="col-12 mt-0">
+                        <h2>Mario</h2>
+                        <p> There are many different genres, from the typical Mario Games to running races and
+                            even solving puzzles. You can companion with other famous game characters, like Luigi,
+                            Yoshi, or even Princess Peach in these adventures. We are happy that you have chosen
+                            to play all these famous games on Mario Games, the most dynamic site available.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 d-none btn-block">
+                            <span></span>
+                        </div>
+                        <div class="col-2 btn-block btn bg-light space">
+                            <span class="fa fa-thumbs-up fa-lg col-6">9</span>
+                        </div>
+                        <div class="col-2 btn-block btn bg-light space">
+                            <span class="fa fa-thumbs-down fa-lg">5</span>
+                        </div>
+                        <div class="col-3 btn-block btn bg-light btn-xs text-center space"
+                        data-toggle="modal" data-target="#showComments">
+                            <span class="comment-text align-self-center">View Comments</span>
+                        </div>
+                        <div class="col-2 btn-block btn bg-light btn-xs text-center space" data-toggle="modal"
+                             data-target="#doComment">
+                            <span class="comment-text align-self-center">Comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content align-items-center">
+        <div class="col-12">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/guldan.png"
+                     height="250" width="250" alt="guldan">
+
+                <div class="media-body">
+                    <div class="col-12 mt-0">
+                        <h2>Guldan</h2>
+                        <p>Gul'dan was the first orcish warlock as well as the de facto founder of the Horde.
+                            He betrayed both his people and his mentor Ner'zhul to the demon lord Kil'jaeden for
+                            personal gain and power, and was directly responsible for the orcs' fall to demonic
+                            enslavement and their subsequent invasion of Azeroth. Tutored by the leaders of the
+                            Burning Legion, he is considered one of the most powerful warlocks to have ever existed.
+                            He founded the Shadow Council and created the first death knights. Gul'dan often
+                            referred to himself as "Darkness Incarnate" and "The Destroyer of Dreams.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 d-none btn-block">
+                            <span></span>
+                        </div>
+                        <div class="col-2 btn-block btn bg-light space">
+                            <span class="fa fa-thumbs-up fa-lg col-6">9</span>
+                        </div>
+                        <div class="col-2 btn-block btn bg-light space">
+                            <span class="fa fa-thumbs-down fa-lg">5</span>
+                        </div>
+                        <div class="col-3 btn-block btn bg-light btn-xs text-center space"
+                             data-toggle="modal" data-target="#showComments">
+                            <span class="comment-text align-self-center">View Comments</span>
+                        </div>
+                        <div class="col-2 btn-block btn bg-light btn-xs text-center space" data-toggle="modal"
+                             data-target="#doComment">
+                            <span class="comment-text align-self-center">Comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content align-items-center">
+        <div class="col-12">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/madivh.jpg"
+                     height="250" width="250" alt="madivh">
+
+                <div class="media-body">
+                    <div class="col-12 mt-0">
+                        <h2>Medivh</h2>
+                        <p>Medivh ("keeper of secrets" in Thalassian) was the last Guardian of Tirisfal,
+                            an ancient line of protectors bestowed with great powers to do battle with the agents
+                            of the Burning Legion. He was possessed even before birth by the spirit of the lord of
+                            the Burning Legion, Sargeras. Under his influence, Medivh contacted the orc warlock
+                            Gul'dan, and together they opened the Dark Portal, bringing the Old Horde to Azeroth.
+                             He was slain some time after by a party led by his best friend, Anduin Lothar.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 d-none btn-block">
+                            <span></span>
+                        </div>
+                        <div class="col-2 btn-block btn bg-light space">
+                            <span class="fa fa-thumbs-up fa-lg col-6">9</span>
+                        </div>
+                        <div class="col-2 btn-block btn bg-light space">
+                            <span class="fa fa-thumbs-down fa-lg">5</span>
+                        </div>
+                        <div class="col-3 btn-block btn bg-light btn-xs text-center space"
+                             data-toggle="modal" data-target="#showComments">
+                            <span class="comment-text align-self-center">View Comments</span>
+                        </div>
+                        <div class="col-2 btn-block btn bg-light btn-xs text-center space" data-toggle="modal"
+                             data-target="#doComment">
+                            <span class="comment-text align-self-center">Comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row ">
+            <div class="col-4 offset-1 col-sm-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About</a></li>
+                    <li><a href="./character.html">Character</a></li>
+                    <li><a href="./contest.html">Contest</a></li>
+                    <li><a href="./contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-7 col-sm-5">
+                <h5>Our Address</h5>
+                <address>
+                    51, Manai, Jamalpur<br>
+                    Mirzapur 231302<br>
+                    INDIA<br>
+                    <i class="fa fa-mobile-phone"></i> +91 1234567890<br>
+                    <i class="fa fa-envelope"></i> <a href="mailto:rohits.games@gmail.com">gamesumo@games.net</a>
+                </address>
+            </div>
+            <div class="col-12 col-sm-4 align-self-center">
+                <div class="text-center">
+                    <a class="btn btn-social-icon btn-google" href="http://google.com/+">
+                        <i class="fa fa-google-plus fa-lg"></i></a>
+
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=">
+                        <i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/">
+                        <i class="fa fa-linkedin fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
+                        <i class="fa fa-twitter fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p>© Copyright 2020 Gamesumo</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
