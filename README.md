@@ -15,7 +15,7 @@ with some credit or additional game benefits when the
 game is once live.
 <br>
 <br>
-Website <a href="https://gamesumo.herokuapp.com/">link</a>
+<b>Website</b> <a href="https://gamesumo.herokuapp.com/">link</a>
 
 <hr>
 <h4>Accomplished Work</h4>
